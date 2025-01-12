@@ -69,7 +69,7 @@ If your system uses udev (i.e. linux), you will probably have to configure it to
 
 3. Add to the group yourself and/or other users whom you wish to grant access to the boards.
 
-    `usermod -a -G k8055 $(USER)`
+    `usermod -a -G k8055 $USER`
 
 The previously described steps may be automated by running `make install-rules` to install just the rules or `make install-permissions USERS="<list of users>"` to also create the group and add the given list of users to it.
 To uninstall, run `make uninstall-rules` or `make uninstall-permissions`.
